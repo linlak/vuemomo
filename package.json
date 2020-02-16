@@ -1,41 +1,71 @@
 {
-  "name": "vuemomo",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "core-js": "^3.6.4",
-    "vue": "^2.6.11"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.2.0",
-    "@vue/cli-plugin-eslint": "~4.2.0",
-    "@vue/cli-service": "~4.2.0",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.1.2",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
+    "name": "@linlak/vuemomo",
+    "version": "1.0.1",
+    "private": false,
+    "author": {
+        "name": "linus nowomukama",
+        "email": "ugsalons@gmail.com",
+        "url": "https://github.com/linlak"
     },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/linlak/vuemomo.git"
+    },
+    "bugs": {
+        "url": "https://github.com/linlak/vuemomo/issues"
+    },
+    "license": "MIT",
+    "description": "",
+    "keywords": [
+        "mtn momo",
+        "vue momo",
+        "momo vuejs",
+        "momo api",
+        "mombile money payment",
+        "online payment"
     ],
-    "parserOptions": {
-      "parser": "babel-eslint"
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "build-bundle": "vue-cli-service build --target=lib --name=vuemomo ./src/components/index.js",
+        "lint": "vue-cli-service lint"
     },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ]
+    "dependencies": {
+        "core-js": "^3.6.4",
+        "vue": "^2.6.11"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "~4.2.0",
+        "@vue/cli-plugin-eslint": "~4.2.0",
+        "@vue/cli-service": "~4.2.0",
+        "babel-eslint": "^10.0.3",
+        "eslint": "^6.7.2",
+        "eslint-plugin-vue": "^6.1.2",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
+        "rules": {}
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "files": [
+        "dist/*",
+        "public/*",
+        "*.json",
+        "*.js",
+        "*.md"
+    ]
 }

@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MomoQrPayment externalId="201-2445-123" amount="10"></MomoQrPayment>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MomoQrPayment from './components/MomoQrPayment.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MomoQrPayment
   }
 }
 </script>
